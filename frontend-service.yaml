@@ -16,4 +16,4 @@ spec:
     app: guestbook
     tier: frontend
   externalIPs:
-    - 35.188.213.59:80
+    - 35.188.213.59
