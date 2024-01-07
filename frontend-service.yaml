@@ -6,11 +6,16 @@ metadata:
     app: guestbook
     tier: frontend
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     # the port that this service should serve on
     - port: 80
       targetPort: 80
+      nodePort: 30008
   selector:
     app: guestbook
     tier: frontend
+  externalIPs:
+    - 34.67.77.14
+    - 34.30.220.45
+    - 34.172.237.162
